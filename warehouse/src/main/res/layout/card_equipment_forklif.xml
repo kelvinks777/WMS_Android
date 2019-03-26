@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gin.wms.warehouse.administrator.EquipmentForklifCard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/forklif_equipment_administrator"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/tvForklif"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:textSize="@dimen/font_subheading"
+                        android:textColor="@color/colorSecondaryText"
+                        tools:text="Forklift#1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/forklif_equipmentId_administrator"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/tvEquipmentIdForklif"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/font_subheading"
+                        android:textColor="@color/colorSecondaryText"
+                        tools:text="000000000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/forklif_equipmentTypeId_administrator"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_subheading" />
+
+                    <TextView
+                        android:id="@+id/tvEquipmentTypeForklif"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/font_subheading"
+                        android:textColor="@color/colorSecondaryText"
+                        tools:text="forklift" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vwSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/separatorBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="250dp"
+                    android:gravity="end">
+
+                    <Button
+                        android:id="@+id/btnAddForklif"
+                        style="@style/CommonButton"
+                        android:layout_width="30dp"
+                        android:layout_height="36dp"
+                        android:text="+"
+                        android:textSize="@dimen/font_body" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.gin.wms.warehouse.administrator.EquipmentForklifCard>

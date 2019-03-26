@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gin.wms.warehouse.operator.Counting.CountingTaskCard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvCountingChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Checked"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    android:background="@color/colorClickable"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_id"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="end|center_vertical"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textAlignment="textEnd"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="Product Id"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="14sp"
+                        android:id="@+id/tvProductIdCounting"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pallet_no"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="end|center_vertical"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textAlignment="textEnd"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="No. Pallet"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="14sp"
+                        android:id="@+id/tvPalletNoCounting"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Id Bin"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="end|center_vertical"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textAlignment="textEnd"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="Id Bin"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="14sp"
+                        android:id="@+id/tvBinIdCounting"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/llQty">
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qty"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="end|center_vertical"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textAlignment="textEnd"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="Qty"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="14sp"
+                        android:id="@+id/tvQtyCounting"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llEditCounting"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"/>
+                <Button
+                    android:id="@+id/btnEditCounting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    style="@style/CommonButton"
+                    android:text="edit"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/colorClickable"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.gin.wms.warehouse.operator.Counting.CountingTaskCard>
